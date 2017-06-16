@@ -1,0 +1,7 @@
+---
+hostname: 127.0.0.1
+port: '2200'
+username: vagrant
+ssh_key: D:/Leon/learn_chef/cookbooks/django/.kitchen/kitchen-vagrant/kitchen-django-default-ubuntu-1404/.vagrant/machines/default/virtualbox/private_key
+last_action: setup
+last_error: Kitchen::ActionFailed

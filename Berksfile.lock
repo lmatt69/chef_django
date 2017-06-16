@@ -1,0 +1,7 @@
+DEPENDENCIES
+  django
+    path: .
+    metadata: true
+
+GRAPH
+  django (0.1.0)

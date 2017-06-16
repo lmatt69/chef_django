@@ -1,0 +1,115 @@
+I, [2017-06-15T21:00:54.880466 #13928]  INFO -- default-ubuntu-1404: -----> Creating <default-ubuntu-1404>...
+I, [2017-06-15T21:00:55.956306 #13928]  INFO -- default-ubuntu-1404: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2017-06-15T21:00:56.051434 #13928]  INFO -- default-ubuntu-1404: ==> default: Importing base box 'bento/ubuntu-14.04'...
+I, [2017-06-15T21:01:05.644270 #13928]  INFO -- default-ubuntu-1404: [KProgress: 90%[K==> default: Matching MAC address for NAT networking...
+I, [2017-06-15T21:01:05.727819 #13928]  INFO -- default-ubuntu-1404: ==> default: Checking if box 'bento/ubuntu-14.04' is up to date...
+I, [2017-06-15T21:01:06.514698 #13928]  INFO -- default-ubuntu-1404: ==> default: Setting the name of the VM: kitchen-django-default-ubuntu-1404_default_1497574866472_77703
+I, [2017-06-15T21:01:07.747885 #13928]  INFO -- default-ubuntu-1404: ==> default: Fixed port collision for 22 => 2222. Now on port 2200.
+I, [2017-06-15T21:01:07.895130 #13928]  INFO -- default-ubuntu-1404: ==> default: Clearing any previously set network interfaces...
+I, [2017-06-15T21:01:07.926639 #13928]  INFO -- default-ubuntu-1404: ==> default: Preparing network interfaces based on configuration...
+I, [2017-06-15T21:01:07.926639 #13928]  INFO -- default-ubuntu-1404:     default: Adapter 1: nat
+I, [2017-06-15T21:01:07.968743 #13928]  INFO -- default-ubuntu-1404: ==> default: Forwarding ports...
+I, [2017-06-15T21:01:08.000285 #13928]  INFO -- default-ubuntu-1404:     default: 22 (guest) => 2200 (host) (adapter 1)
+I, [2017-06-15T21:01:08.094571 #13928]  INFO -- default-ubuntu-1404: ==> default: Booting VM...
+I, [2017-06-15T21:01:12.425289 #13928]  INFO -- default-ubuntu-1404: ==> default: Waiting for machine to boot. This may take a few minutes...
+I, [2017-06-15T21:01:12.593514 #13928]  INFO -- default-ubuntu-1404:     default: SSH address: 127.0.0.1:2200
+I, [2017-06-15T21:01:12.593514 #13928]  INFO -- default-ubuntu-1404:     default: SSH username: vagrant
+I, [2017-06-15T21:01:12.593514 #13928]  INFO -- default-ubuntu-1404:     default: SSH auth method: private key
+I, [2017-06-15T21:01:31.095200 #13928]  INFO -- default-ubuntu-1404:     default: 
+I, [2017-06-15T21:01:31.095200 #13928]  INFO -- default-ubuntu-1404:     default: Vagrant insecure key detected. Vagrant will automatically replace
+I, [2017-06-15T21:01:31.095200 #13928]  INFO -- default-ubuntu-1404:     default: this with a newly generated keypair for better security.
+I, [2017-06-15T21:01:31.857442 #13928]  INFO -- default-ubuntu-1404:     default: 
+I, [2017-06-15T21:01:31.857442 #13928]  INFO -- default-ubuntu-1404:     default: Inserting generated public key within guest...
+I, [2017-06-15T21:01:32.334760 #13928]  INFO -- default-ubuntu-1404:     default: Removing insecure key from the guest if it's present...
+I, [2017-06-15T21:01:32.552441 #13928]  INFO -- default-ubuntu-1404:     default: Key inserted! Disconnecting and reconnecting using new SSH key...
+I, [2017-06-15T21:01:33.762112 #13928]  INFO -- default-ubuntu-1404: ==> default: Machine booted and ready!
+I, [2017-06-15T21:01:33.762112 #13928]  INFO -- default-ubuntu-1404: ==> default: Checking for guest additions in VM...
+I, [2017-06-15T21:01:33.803856 #13928]  INFO -- default-ubuntu-1404: ==> default: Setting hostname...
+I, [2017-06-15T21:01:34.202114 #13928]  INFO -- default-ubuntu-1404: ==> default: Mounting shared folders...
+I, [2017-06-15T21:01:34.202114 #13928]  INFO -- default-ubuntu-1404:     default: /tmp/omnibus/cache => C:/Users/Leon/.kitchen/cache
+I, [2017-06-15T21:01:34.677625 #13928]  INFO -- default-ubuntu-1404: ==> default: Machine not provisioned because `--no-provision` is specified.
+I, [2017-06-15T21:01:36.159343 #13928]  INFO -- default-ubuntu-1404: [SSH] Established
+I, [2017-06-15T21:01:36.159844 #13928]  INFO -- default-ubuntu-1404: Vagrant instance <default-ubuntu-1404> created.
+I, [2017-06-15T21:01:36.163349 #13928]  INFO -- default-ubuntu-1404: Finished creating <default-ubuntu-1404> (0m41.28s).
+I, [2017-06-15T21:01:36.163349 #13928]  INFO -- default-ubuntu-1404: -----> Converging <default-ubuntu-1404>...
+I, [2017-06-15T21:01:36.164852 #13928]  INFO -- default-ubuntu-1404: Preparing files for transfer
+I, [2017-06-15T21:01:36.165352 #13928]  INFO -- default-ubuntu-1404: Preparing dna.json
+I, [2017-06-15T21:01:36.168355 #13928]  INFO -- default-ubuntu-1404: Resolving cookbook dependencies with Berkshelf 5.6.4...
+I, [2017-06-15T21:01:39.574257 #13928]  INFO -- default-ubuntu-1404: Removing non-cookbook files before transfer
+I, [2017-06-15T21:01:39.597788 #13928]  INFO -- default-ubuntu-1404: Preparing validation.pem
+I, [2017-06-15T21:01:39.600792 #13928]  INFO -- default-ubuntu-1404: Preparing client.rb
+I, [2017-06-15T21:01:39.625580 #13928]  INFO -- default-ubuntu-1404: -----> Installing Chef Omnibus (install only if missing)
+I, [2017-06-15T21:01:39.626081 #13928]  INFO -- default-ubuntu-1404: Downloading https://omnitruck.chef.io/install.sh to file /tmp/install.sh
+I, [2017-06-15T21:01:39.626081 #13928]  INFO -- default-ubuntu-1404: Trying wget...
+I, [2017-06-15T21:01:39.924293 #13928]  INFO -- default-ubuntu-1404: Download complete.
+I, [2017-06-15T21:01:39.935307 #13928]  INFO -- default-ubuntu-1404: ubuntu 14.04 x86_64
+I, [2017-06-15T21:01:39.935809 #13928]  INFO -- default-ubuntu-1404: Getting information for chef stable  for ubuntu...
+I, [2017-06-15T21:01:39.935809 #13928]  INFO -- default-ubuntu-1404: downloading https://omnitruck.chef.io/stable/chef/metadata?v=&p=ubuntu&pv=14.04&m=x86_64
+I, [2017-06-15T21:01:39.935809 #13928]  INFO -- default-ubuntu-1404:   to file /tmp/install.sh.1493/metadata.txt
+I, [2017-06-15T21:01:39.936309 #13928]  INFO -- default-ubuntu-1404: trying wget...
+I, [2017-06-15T21:01:40.401400 #13928]  INFO -- default-ubuntu-1404: sha1	0a9cb607bc5b9189c88a981ee010e1e15a8a9042
+I, [2017-06-15T21:01:40.401901 #13928]  INFO -- default-ubuntu-1404: sha256	d8b0a8c012945cda9a2ff1b6b93bd852b06b81c71b4604250dac7c90143fd14d
+I, [2017-06-15T21:01:40.402402 #13928]  INFO -- default-ubuntu-1404: url	https://packages.chef.io/files/stable/chef/13.1.31/ubuntu/14.04/chef_13.1.31-1_amd64.deb
+I, [2017-06-15T21:01:40.402402 #13928]  INFO -- default-ubuntu-1404: version	13.1.31
+I, [2017-06-15T21:01:40.402903 #13928]  INFO -- default-ubuntu-1404: downloaded metadata file looks valid...
+I, [2017-06-15T21:01:40.402903 #13928]  INFO -- default-ubuntu-1404: /tmp/omnibus/cache/chef_13.1.31-1_amd64.deb already exists, verifiying checksum...
+I, [2017-06-15T21:01:40.403403 #13928]  INFO -- default-ubuntu-1404: Comparing checksum with sha256sum...
+I, [2017-06-15T21:01:40.615186 #13928]  INFO -- default-ubuntu-1404: checksum compare succeeded, using existing file!
+I, [2017-06-15T21:01:40.615687 #13928]  INFO -- default-ubuntu-1404: 
+I, [2017-06-15T21:01:40.615687 #13928]  INFO -- default-ubuntu-1404: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2017-06-15T21:01:40.616188 #13928]  INFO -- default-ubuntu-1404: 
+I, [2017-06-15T21:01:40.616188 #13928]  INFO -- default-ubuntu-1404: You are installing an omnibus package without a version pin.  If you are installing
+I, [2017-06-15T21:01:40.616188 #13928]  INFO -- default-ubuntu-1404: on production servers via an automated process this is DANGEROUS and you will
+I, [2017-06-15T21:01:40.616689 #13928]  INFO -- default-ubuntu-1404: be upgraded without warning on new releases, even to new major releases.
+I, [2017-06-15T21:01:40.616689 #13928]  INFO -- default-ubuntu-1404: Letting the version float is only appropriate in desktop, test, development or
+I, [2017-06-15T21:01:40.617190 #13928]  INFO -- default-ubuntu-1404: CI/CD environments.
+I, [2017-06-15T21:01:40.617190 #13928]  INFO -- default-ubuntu-1404: 
+I, [2017-06-15T21:01:40.617190 #13928]  INFO -- default-ubuntu-1404: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2017-06-15T21:01:40.617190 #13928]  INFO -- default-ubuntu-1404: 
+I, [2017-06-15T21:01:40.617691 #13928]  INFO -- default-ubuntu-1404: Installing chef 
+I, [2017-06-15T21:01:40.617691 #13928]  INFO -- default-ubuntu-1404: installing with dpkg...
+I, [2017-06-15T21:01:40.659652 #13928]  INFO -- default-ubuntu-1404: Selecting previously unselected package chef.
+I, [2017-06-15T21:01:40.785584 #13928]  INFO -- default-ubuntu-1404: (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 35394 files and directories currently installed.)
+I, [2017-06-15T21:01:40.786085 #13928]  INFO -- default-ubuntu-1404: Preparing to unpack .../cache/chef_13.1.31-1_amd64.deb ...
+I, [2017-06-15T21:01:40.786085 #13928]  INFO -- default-ubuntu-1404: Unpacking chef (13.1.31-1) ...
+I, [2017-06-15T21:01:48.556481 #13928]  INFO -- default-ubuntu-1404: Setting up chef (13.1.31-1) ...
+I, [2017-06-15T21:01:48.599038 #13928]  INFO -- default-ubuntu-1404: Thank you for installing Chef!
+I, [2017-06-15T21:01:48.642096 #13928]  INFO -- default-ubuntu-1404: Transferring files to <default-ubuntu-1404>
+I, [2017-06-15T21:01:49.966748 #13928]  INFO -- default-ubuntu-1404: Starting Chef Client, version 13.1.31
+I, [2017-06-15T21:01:51.036348 #13928]  INFO -- default-ubuntu-1404: Creating a new client identity for default-ubuntu-1404 using the validator key.
+I, [2017-06-15T21:01:51.130474 #13928]  INFO -- default-ubuntu-1404: resolving cookbooks for run list: ["django::default"]
+I, [2017-06-15T21:01:51.141489 #13928]  INFO -- default-ubuntu-1404: Synchronizing Cookbooks:
+I, [2017-06-15T21:01:51.163018 #13928]  INFO -- default-ubuntu-1404:   - django (0.1.0)
+I, [2017-06-15T21:01:51.163519 #13928]  INFO -- default-ubuntu-1404: Installing Cookbook Gems:
+I, [2017-06-15T21:01:51.163519 #13928]  INFO -- default-ubuntu-1404: Compiling Cookbooks...
+I, [2017-06-15T21:01:51.164019 #13928]  INFO -- default-ubuntu-1404: Converging 0 resources
+I, [2017-06-15T21:01:51.185048 #13928]  INFO -- default-ubuntu-1404: 
+I, [2017-06-15T21:01:51.185548 #13928]  INFO -- default-ubuntu-1404: Running handlers:
+I, [2017-06-15T21:01:51.185548 #13928]  INFO -- default-ubuntu-1404: Running handlers complete
+I, [2017-06-15T21:01:51.186049 #13928]  INFO -- default-ubuntu-1404: Chef Client finished, 0/0 resources updated in 01 seconds
+I, [2017-06-15T21:01:51.227097 #13928]  INFO -- default-ubuntu-1404: Finished converging <default-ubuntu-1404> (0m15.06s).
+I, [2017-06-15T21:01:51.227598 #13928]  INFO -- default-ubuntu-1404: -----> Setting up <default-ubuntu-1404>...
+I, [2017-06-15T21:01:51.231603 #13928]  INFO -- default-ubuntu-1404: Finished setting up <default-ubuntu-1404> (0m0.00s).
+I, [2017-06-15T21:01:51.231603 #13928]  INFO -- default-ubuntu-1404: -----> Verifying <default-ubuntu-1404>...
+I, [2017-06-15T21:01:51.701480 #13928]  INFO -- default-ubuntu-1404: Loaded tests from test/smoke/default 
+E, [2017-06-15T21:01:51.772104 #13928] ERROR -- default-ubuntu-1404: Verify failed on instance <default-ubuntu-1404>.
+E, [2017-06-15T21:01:51.772104 #13928] ERROR -- default-ubuntu-1404: ------Exception-------
+E, [2017-06-15T21:01:51.772104 #13928] ERROR -- default-ubuntu-1404: Class: Kitchen::ActionFailed
+E, [2017-06-15T21:01:51.772104 #13928] ERROR -- default-ubuntu-1404: Message: Inspec Runner returns 1
+E, [2017-06-15T21:01:51.772104 #13928] ERROR -- default-ubuntu-1404: ----------------------
+E, [2017-06-15T21:01:51.772104 #13928] ERROR -- default-ubuntu-1404: ------Backtrace-------
+E, [2017-06-15T21:01:51.772104 #13928] ERROR -- default-ubuntu-1404: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/kitchen-inspec-0.17.0/lib/kitchen/verifier/inspec.rb:96:in `call'
+E, [2017-06-15T21:01:51.772104 #13928] ERROR -- default-ubuntu-1404: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:434:in `block in verify_action'
+E, [2017-06-15T21:01:51.772104 #13928] ERROR -- default-ubuntu-1404: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:527:in `synchronize_or_call'
+E, [2017-06-15T21:01:51.772604 #13928] ERROR -- default-ubuntu-1404: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:489:in `block in action'
+E, [2017-06-15T21:01:51.772604 #13928] ERROR -- default-ubuntu-1404: C:/opscode/chefdk/embedded/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2017-06-15T21:01:51.772604 #13928] ERROR -- default-ubuntu-1404: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:488:in `action'
+E, [2017-06-15T21:01:51.772604 #13928] ERROR -- default-ubuntu-1404: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:426:in `verify_action'
+E, [2017-06-15T21:01:51.772604 #13928] ERROR -- default-ubuntu-1404: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:359:in `block in transition_to'
+E, [2017-06-15T21:01:51.772604 #13928] ERROR -- default-ubuntu-1404: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:358:in `each'
+E, [2017-06-15T21:01:51.772604 #13928] ERROR -- default-ubuntu-1404: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:358:in `transition_to'
+E, [2017-06-15T21:01:51.772604 #13928] ERROR -- default-ubuntu-1404: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:157:in `verify'
+E, [2017-06-15T21:01:51.772604 #13928] ERROR -- default-ubuntu-1404: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/command.rb:197:in `public_send'
+E, [2017-06-15T21:01:51.772604 #13928] ERROR -- default-ubuntu-1404: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2017-06-15T21:01:51.772604 #13928] ERROR -- default-ubuntu-1404: C:/opscode/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2017-06-15T21:01:51.772604 #13928] ERROR -- default-ubuntu-1404: ----End Backtrace-----
