@@ -6,9 +6,11 @@
 
 package 'python3-pip'
 
-execute 'pip3 install virtualenv'
+pip3 'virtualenv' do
+  action :install
+end
 
-execute 'virtualenv newenv'
+#execute 'virtualenv newenv'
 
 #execute 'source newenv/bin/activate'
 
