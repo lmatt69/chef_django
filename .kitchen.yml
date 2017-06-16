@@ -28,5 +28,5 @@ suites:
       - recipe[django::install_pip]
     verifier:
       inspec_tests:
-        - test/smoke/default/install_pip_test
+        - test/smoke/default/pip
     attributes:
