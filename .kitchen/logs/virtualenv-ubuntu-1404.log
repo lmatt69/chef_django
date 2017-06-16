@@ -1,0 +1,3 @@
+I, [2017-06-16T12:09:50.153283 #5064]  INFO -- virtualenv-ubuntu-1404: -----> Verifying <virtualenv-ubuntu-1404>...
+I, [2017-06-16T12:09:50.580466 #5064]  INFO -- virtualenv-ubuntu-1404: Loaded tests from test/smoke/default/virtualenv 
+I, [2017-06-16T12:09:50.729541 #5064]  INFO -- virtualenv-ubuntu-1404: Finished verifying <virtualenv-ubuntu-1404> (0m0.57s).
